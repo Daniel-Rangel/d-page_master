@@ -78,6 +78,14 @@ li:last-child:hover a{
     padding-top: 100px;
 }
 
+.insurance::before{
+    content: "";
+    background-color: #ffffff;
+    width: 152px;
+    height: 2px;
+    position: absolute;
+}
+
 .insurance__text__h1{
     color: #ffffff;
     font-family: 'DM Serif Display', serif;
