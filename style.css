@@ -26,7 +26,7 @@ body{
     font-family: 'Karla', sans-serif;
     font-size: 16px;
 }
-
+/* Menu */
 .menu{
     max-width: 1110px;
     margin: 30px auto;
@@ -65,3 +65,26 @@ li:last-child:hover a{
     background-color: #2b282f;
 }
 
+/*insurance*/
+
+.insurance--bg{
+    background-color: #2d2640;
+}
+
+.insurance{
+    max-width: 1110px;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.insurance__text__h1{
+    color: #ffffff;
+    font-family: 'DM Serif Display', serif;
+    font-weight: normal;
+    font-size: 4em;
+    margin-top: 72px;
+    line-height: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
