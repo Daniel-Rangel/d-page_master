@@ -28,7 +28,7 @@ body{
 }
 /* Menu */
 .menu{
-    max-width: 1110px;
+    max-width: 1112px;
     margin: 30px auto;
     display: flex;
     justify-content: space-between;
@@ -66,14 +66,34 @@ li:last-child:hover a{
 }
 
 /*insurance*/
-
 .insurance--bg{
     background-color: #2d2640;
     height: 600px;
+    position: relative;
+}
+
+.insurance--bg::before{
+    content: '';
+    background: url(./images/bg-pattern-intro-right-desktop.svg) no-repeat;
+    width: 392px;
+    height: 593px;
+    position: absolute;
+    right: 0;
+    transform: rotateX(34deg);
+    top: -50px;
+}
+
+.insurance--bg::after{
+    content: '';
+    background: url(./images/bg-pattern-intro-left-desktop.svg) no-repeat;
+    width: 198px;
+    height: 504px;
+    position: absolute;
+    bottom: -332px;
 }
 
 .insurance{
-    max-width: 1110px;
+    max-width: 1112px;
     display: flex;
     margin: 0 auto;
     padding-top: 100px;
