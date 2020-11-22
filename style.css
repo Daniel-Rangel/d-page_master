@@ -78,11 +78,15 @@ li:last-child:hover a{
     padding-top: 100px;
 }
 
+.insurance__text{
+    padding-right: 30px;
+}
+
 .insurance::before{
     content: "";
     background-color: #ffffff;
     width: 152px;
-    height: 2px;
+    height: 1px;
     position: absolute;
 }
 
@@ -95,4 +99,24 @@ li:last-child:hover a{
     line-height: 1em;
     display: flex;
     flex-wrap: wrap;
+}
+
+.insurance__text__p{
+    font-size: 1em;
+    font-weight: 100;
+    color: #ffffff;
+    margin-top: 25px;
+    line-height: 1.5em;
+    letter-spacing: .01em;
+}
+
+.insurance__text__btn{
+    margin-top: 2.5em;
+    padding: 12px 20px;
+    font-size: .9em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #2d2640;
 }
