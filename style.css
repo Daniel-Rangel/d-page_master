@@ -69,6 +69,7 @@ li:last-child:hover a{
 
 .insurance--bg{
     background-color: #2d2640;
+    height: 600px;
 }
 
 .insurance{
@@ -119,4 +120,10 @@ li:last-child:hover a{
     color: #fff;
     border: 2px solid #fff;
     background-color: #2d2640;
+}
+
+.insurance__text__btn:hover{
+    background-color: #ffffff;
+    color: #2d2640;
+    font-weight: bold;
 }
