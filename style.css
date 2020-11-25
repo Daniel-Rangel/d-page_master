@@ -66,9 +66,18 @@ li:last-child:hover a{
 }
 
 /*insurance*/
-.insurance{
-    
-}
+/* .insutance--elementos{
+    overflow: hidden;
+} */
+
+/* .insutance--elementos::after{
+    content: '';
+    background: url(./images/bg-pattern-intro-left-desktop.svg) no-repeat;
+    width: 198px;
+    height: 504px;
+    position: absolute;
+    bottom: -232px;
+} */
 
 .insurance--bg{
     background-color: #2d2640;
@@ -87,14 +96,15 @@ li:last-child:hover a{
     top: -50px;
 }
 
-.insurance--bg::after{
+/* descartar */
+/* .insurance--bg::after{
     content: '';
     background: url(./images/bg-pattern-intro-left-desktop.svg) no-repeat;
     width: 198px;
     height: 504px;
     position: absolute;
     bottom: -332px;
-}
+} */
 
 .insurance{
     max-width: 1112px;
@@ -156,3 +166,55 @@ li:last-child:hover a{
     display: block;
     height: 100%;
 }
+
+/* Different */
+
+.different{
+    max-width:1112px ;
+    margin: 0 auto;
+    margin-top: 152px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.different::before{
+    content: '';
+    background-color: #2b282f;
+    width: 150px;
+    height: 1px;
+    position: absolute;
+}
+
+.different__h1{
+    margin-top: 74px;
+    font-size: 4em;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    flex: 0 0 100%;
+}
+
+.different__card{
+    width: 352px;
+    margin: 100px 0;
+    flex: 1 0 auto;
+}
+
+.different__card:nth-child(3){
+    margin: auto 20px;
+}
+
+.different__card__h2{
+    margin-top: 40px;
+    font-size: 2em;
+    font-weight: 400;
+    font-family: 'DM Serif Display', serif;
+    color: #2b282f;
+}
+
+.different__card__p{
+    margin-top: 28px;
+    font-size: 1em;
+    color: rgb(132, 132, 134);
+}
+
+/* colocar 66px na pproxima div*/
