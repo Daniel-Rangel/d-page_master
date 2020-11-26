@@ -65,10 +65,10 @@ li:last-child:hover a{
     background-color: #2b282f;
 }
 
-/*insurance*/
-/* .insutance--elementos{
+/* insurance */
+.insurance--elementos{
     overflow: hidden;
-} */
+}
 
 /* .insutance--elementos::after{
     content: '';
