@@ -9,8 +9,8 @@
 
 # Features
 *   Pratica com o BEM
-*   EStudo com Flex Box
-*   Estudo com tags semântica
+*   Flex Box
+*   Tags semântica
 <br>
 <br>
 
