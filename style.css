@@ -80,10 +80,6 @@ li:last-child:hover a{
     z-index: 0;
 }
 
-.insurance--elementos{
-    position: relative;
-}
-
 .insurance--elementos::before{
     content: '';
     background: url('./images/bg-pattern-intro-right-desktop.svg') no-repeat;
@@ -96,7 +92,7 @@ li:last-child:hover a{
     z-index: 11;
 }
 
-.insurance--elementos::after{
+/* .insurance--elementos::after{
     content: '';
     background: url('./images/bg-pattern-intro-left-desktop.svg') no-repeat;
     width: 195px;
@@ -107,6 +103,7 @@ li:last-child:hover a{
     transform: rotateY(-28deg);
     z-index: 11;
 }
+ */
 
 .insurance{
     max-width: 1112px;
@@ -173,30 +170,31 @@ li:last-child:hover a{
 
 /* Different */
 .different{
-    overflow: hidden;
-    position: relative;
-    z-index: -10;
-    max-width: 1112px;
+    width: 1112px;
     margin: 0 auto;
     margin-top: 100px;
 }
 
 .different::before{
+    content: url("./images/bg-pattern-intro-left-desktop.svg");
+    position: absolute;
+    left: 0;
+    top: 504px;
+}
+
+.different__h1{
+    font-family: 'DM Serif Display' , serif;
+    font-weight: normal;
+    font-size: 4.3em;
+    position: relative;
+}
+
+.different__h1::before{
     content: '';
     width: 152px;
     height: 1px;
     background-color: gray;
-    position: absolute;
-    left: 0;
-}
-
-.different__h1{
-    font-family: 'DM Serif Display', serif;
-    font-weight: normal;
-    font-size: 4.3em;
-    font-weight: normal;
-
-    
-    margin-top: 72px;
+    display: block;
+    margin-bottom: 100px;
 }
 /* colocar 66px na pproxima div*/
