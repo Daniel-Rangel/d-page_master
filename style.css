@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2? family = Karla: wght @ 400; 700 & display = swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
+:root{
+    --color_Very_Light_Gray: #fafafa;
+    --color_Gray: #8f8f91;
+    --color_Dark_Grayish_Violet: #837d87;
+    --color_Grayish_Blue: #95a9c6;
+    --color_Very_Dark_Violet: #2b272f;
+    --color_Dark_Violet: #2c2640;
+}
 /* 
 titulos
 font-family: 'DM Serif Display', serif; 
-
-primaria:
-#2C2540
-#94A8C5
-
-natural:
-#2B272F
-#827D87
-#F9F9F9
 
 */
 *{
@@ -44,25 +43,25 @@ li a{
     text-decoration: none;
     font-size: 0.8em;
     font-weight: bold;
-    color: rgb(143, 143, 145);
+    color: var(--color_Gray);
     padding: 8px 16px;
     letter-spacing: 1px;
 
 }
 
 li a:hover{
-    color: #2b282f;
+    color: var(--color_Dark_Violet);
 }
 
  li:last-child a{
-    color: #2b282f;
-    border: 2px solid #2b282f ;
+    color: var(--color_Dark_Violet);
+    border: 2px solid var(--color_Dark_Violet);
     letter-spacing: 2px;
 }
 
 li:last-child:hover a{
-    color: #ffffff;
-    background-color: #2b282f;
+    color: var(--color_Very_Light_Gray);
+    background-color: var(--color_Dark_Violet);
 }
 
 /* insurance */
@@ -75,7 +74,7 @@ li:last-child:hover a{
     content: '';
     width: 100%;
     height: 600px;
-    background-color: #2d2640;
+    background-color: var(--color_Dark_Violet);
     position: absolute;
     z-index: 0;
 }
@@ -92,19 +91,6 @@ li:last-child:hover a{
     z-index: 11;
 }
 
-/* .insurance--elementos::after{
-    content: '';
-    background: url('./images/bg-pattern-intro-left-desktop.svg') no-repeat;
-    width: 195px;
-    height: 504px;
-    position: absolute;
-    left: -12px;
-    bottom: -183px;
-    transform: rotateY(-28deg);
-    z-index: 11;
-}
- */
-
 .insurance{
     max-width: 1112px;
     display: flex;
@@ -120,14 +106,14 @@ li:last-child:hover a{
 
 .insurance::before{
     content: "";
-    background-color: #ffffff;
+    background-color: var(--color_Very_Light_Gray);
     width: 152px;
     height: 1px;
     position: absolute;
 }
 
 .insurance__text__h1{
-    color: #ffffff;
+    color: var(--color_Very_Light_Gray);
     font-family: 'DM Serif Display', serif;
     font-weight: normal;
     font-size: 4.3em;
@@ -140,7 +126,7 @@ li:last-child:hover a{
 .insurance__text__p{
     font-size: 1em;
     font-weight: 400;
-    color: #ffffff;
+    color: var(--color_Very_Light_Gray);
     margin-top: 25px;
     line-height: 1.5em;
     letter-spacing: .01em;
@@ -152,14 +138,14 @@ li:last-child:hover a{
     font-size: .9em;
     letter-spacing: .1em;
     text-transform: uppercase;
-    color: #fff;
-    border: 2px solid #fff;
-    background-color: #2d2640;
+    color: var(--color_Very_Light_Gray);
+    border: 2px solid var(--color_Very_Light_Gray);
+    background-color: var(--color_Dark_Violet);
 }
 
 .insurance__text__btn:hover{
-    background-color: #ffffff;
-    color: #2d2640;
+    background-color: var(--color_Very_Light_Gray);
+    color: var(--color_Very_Dark_Violet);
     font-weight: bold;
 }
 
@@ -179,7 +165,7 @@ li:last-child:hover a{
     content: url("./images/bg-pattern-intro-left-desktop.svg");
     position: absolute;
     left: 0;
-    top: 504px;
+    top: 512px;
 }
 
 .different__h1{
@@ -187,14 +173,38 @@ li:last-child:hover a{
     font-weight: normal;
     font-size: 4.3em;
     position: relative;
+    color: var(--color_Very_Dark_Violet);
 }
 
 .different__h1::before{
     content: '';
     width: 152px;
     height: 1px;
-    background-color: gray;
+    background-color: #b0a6af;
     display: block;
-    margin-bottom: 100px;
+    margin-bottom: 72px;
+}
+
+.different__cards{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.different__card{
+    width: 33.33%;
+}
+
+.different__card__h2{
+    margin-top: 40px;
+    margin-bottom: 22px;
+    color: var(--color_Very_Dark_Violet);
+    
+}
+
+.different__card__text{
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: var(--color_Gray);
 }
 /* colocar 66px na pproxima div*/
