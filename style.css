@@ -259,11 +259,23 @@ li:last-child:hover a{
 
 .ft--bg{
     background-color: var(--color_Very_Light_Gray);
+    position: relative;
+}
+
+.ft--bg::before{
+    content: '';
+    background: url('./images/bg-pattern-footer-desktop.svg');
+    width: 528px;
+    height: 235px;/*235*/
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .footer{
     max-width: 1112px;
     margin: 0 auto;
+    position: relative;
 }
 
 .footer__ftsocial{
@@ -288,10 +300,45 @@ li:last-child:hover a{
     color: var(--color_Dark_Grayish_Violet);
 }
 
+.footer__social i:hover{
+    color: var(--color_Very_Dark_Violet);
+}
+
 .footer__social:last-child i{
     margin-right: 0;
 }
 /* fim do footer*/
+
+
 .footer__ftlinks{
-    height: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer__links{
+    text-transform: uppercase;
+    flex: 1 0 0;
+    margin-bottom: 50px;
+}
+.footer__title{
+    font-size: 0.8em;
+    padding: 50px 0 40px;
+    color: var(--color_Dark_Grayish_Violet);
+    letter-spacing: 2px;
+}
+
+.footer__link{
+    font-size: 0.8em;
+    color: var(--color_Dark_Violet);
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    letter-spacing: 2px;
+    padding: 11px 0;
+}
+
+.footer__link:hover{
+    text-decoration: underline;
 }
