@@ -351,6 +351,7 @@ li:last-child:hover a{
 @media only screen and (max-width: 375px){
     /* menu */
     .menu{
+        max-width: 375px;
         padding: 20px;
     }
     .menu__order{
@@ -362,10 +363,50 @@ li:last-child:hover a{
 
     /* insurance */
     .insurance--bg::before{
+        max-width: 375px;
         height: 100%;
     }
     .insurance{
         text-align: center;
         flex-direction: column-reverse;
+    }
+
+    .insurance--elementos::before{
+        background: none;
+    }
+
+    .insurance--elementos::after{
+        background: none;
+    }
+
+    .insurance__img img{
+        width: 100%;
+    }
+    .different{
+        text-align: center;
+        max-width: 375px;
+    }
+    .different__cards{
+        flex-direction: column;
+        max-width: 375px;
+    }
+
+    .ft--bg::before{
+        width: 0;
+    }
+
+    .footer__ftsocial{
+        flex-direction: column;
+        text-align: center;
+        margin: 0 24px;
+    }
+
+    .footer__sociais{
+        padding: 30px 0 0;
+    }
+
+    .footer__ftlinks{
+        text-align: center;
+        flex-direction: column;
     }
 }
