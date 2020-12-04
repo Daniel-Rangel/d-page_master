@@ -352,7 +352,7 @@ li:last-child:hover a{
     /* menu */
     .menu{
         max-width: 375px;
-        padding: 20px;
+        margin: 24px;
     }
     .menu__order{
         display: none;
@@ -367,28 +367,73 @@ li:last-child:hover a{
         height: 100%;
     }
     .insurance{
+        padding-top: 0;
+        padding-bottom: 92px;
         text-align: center;
         flex-direction: column-reverse;
     }
 
-    .insurance--elementos::before{
-        background: none;
+    .insurance::before{
+        content: none;
     }
 
-    .insurance--elementos::after{
-        background: none;
+    .insurance--elementos::before{
+        content: none;
+        background: url("./images/bg-pattern-intro-left-mobile.svg") no-repeat;
+    }
+
+    .insurance__text{
+        padding: 0;
+        margin: 0 24px;
+        text-align: center;
+    }
+    
+    .insurance__text::before{
+        content: url("./images/bg-pattern-intro-left-mobile.svg");
+        position: absolute;
+        left: 0;
+    }
+
+    .insurance__text__h1,
+    .different__h1{
+        font-size: 2.9em;
     }
 
     .insurance__img img{
         width: 100%;
     }
+
     .different{
         text-align: center;
         max-width: 375px;
+        position: relative;
     }
+
+    .different::before{
+        content: '';
+        background: url("./images/bg-pattern-intro-right-mobile.svg") no-repeat;
+        width: 125px;
+        height: 330px;
+        position: absolute;
+        top: -270px;
+        left: 251px;
+    }
+
+    .different__h1::before{
+        margin: 0 auto 48px;
+    }
+
     .different__cards{
         flex-direction: column;
         max-width: 375px;
+    }
+
+    .different__card:nth-child(2){
+        margin: 62px 24px;
+    }
+
+    .different__card{
+        margin: 62px 24px;
     }
 
     .ft--bg::before{
