@@ -395,7 +395,8 @@ li:last-child:hover a{
     }
 
     .insurance__text__h1,
-    .different__h1{
+    .different__h1,
+    .work__h1{
         font-size: 2.9em;
     }
 
@@ -426,24 +427,45 @@ li:last-child:hover a{
     .different__cards{
         flex-direction: column;
         max-width: 375px;
+        margin-top: 80px;
     }
 
     .different__card:nth-child(2){
-        margin: 62px 24px;
+        margin: 62px 24px 0;
     }
 
     .different__card{
-        margin: 62px 24px;
+        margin: 62px 24px 0;
     }
 
+    .work{
+        flex-direction: column;
+        margin: 148px 24px;
+        padding: 40px 18px;
+        text-align: center;
+    }
+
+    .work::before{
+        content: url('./images/bg-pattern-how-we-work-mobile.svg');
+    }
+
+    .work__h1{
+        margin: 44px 0;
+    }
+
+    /*footer moobile */
+
     .ft--bg::before{
-        width: 0;
+        background: url('./images/bg-pattern-footer-mobile.svg') no-repeat;
+        width: 374px;
     }
 
     .footer__ftsocial{
         flex-direction: column;
         text-align: center;
         margin: 0 24px;
+        padding-top: 80px;
+        padding-bottom: 40px;
     }
 
     .footer__sociais{
@@ -454,4 +476,13 @@ li:last-child:hover a{
         text-align: center;
         flex-direction: column;
     }
+
+    .footer__links{
+        margin-bottom: 0;
+    }
+
+    .footer__title{
+        padding: 40px 0 42px;
+    }
+    
 }
