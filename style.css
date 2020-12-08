@@ -229,6 +229,7 @@ li:last-child:hover a{
     justify-content: space-between;
     position: relative;
 }
+
 .work::before{
     content: url('./images/bg-pattern-how-we-work-desktop.svg');
     position: absolute;
@@ -312,19 +313,18 @@ li:last-child:hover a{
 }
 /* fim do footer*/
 
-
 .footer__ftlinks{
     min-height: 100px;
     display: flex;
     justify-content: space-between;
 }
 
-
 .footer__links{
     text-transform: uppercase;
     flex: 1 0 0;
     margin-bottom: 50px;
 }
+
 .footer__title{
     font-size: 0.8em;
     padding: 50px 0 40px;
@@ -356,11 +356,6 @@ li:last-child:hover a{
         margin: 24px;
     }
 
-    .menu__nav{
-        width: 40px;
-        height: 40px;
-    }
-
     .menu__order{
         display: none;
     }
@@ -373,6 +368,7 @@ li:last-child:hover a{
         max-width: 375px;
         height: 100%;
     }
+
     .insurance{
         padding-top: 0;
         padding-bottom: 92px;
