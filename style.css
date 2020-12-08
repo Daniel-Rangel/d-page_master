@@ -9,7 +9,7 @@
     --color_Very_Dark_Violet: #2b272f;
     --color_Dark_Violet: #2c2640;
 }
-/* 
+/*
 titulos
 font-family: 'DM Serif Display', serif; 
 
@@ -346,6 +346,10 @@ li:last-child:hover a{
     text-decoration: underline;
 }
 
+/* mobile */
+
+
+
 /*1024//  //324*/
 
 @media only screen and (max-width: 375px){
@@ -487,5 +491,35 @@ li:last-child:hover a{
     .footer__title{
         padding: 40px 0 42px;
     }
-    
+
+    .mobile-nav{
+        width: 100%;
+        height: 124vw;
+        background-color: #2c2640;
+        position: absolute;
+        top: 84px;
+        z-index: 10;
+    }
+
+    .mobile__order {
+        margin-top: 24px;
+    }
+
+    .mobile__order li{
+        display: block;
+        text-align: center;
+        padding: 0 24px;
+    }
+
+    .mobile__order a{
+        display: block;
+        width: 100%;
+        padding: 20px 16px;
+        color: var(--color_Very_Light_Gray);
+    }
+
+    .mobile__order li:last-child a {
+        border: 1px solid #fafafa;
+        color: white;
+    }
 }
