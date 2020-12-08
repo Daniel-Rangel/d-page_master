@@ -8,6 +8,7 @@
     --color_Grayish_Blue: #95a9c6;
     --color_Very_Dark_Violet: #2b272f;
     --color_Dark_Violet: #2c2640;
+    --color_Dark_Violet_T: #2c2640a2;
 }
 /*
 titulos
@@ -521,5 +522,14 @@ li:last-child:hover a{
     .mobile__order li:last-child a {
         border: 1px solid #fafafa;
         color: white;
+    }
+
+    .mobile__order a:hover{
+        color: var(--color_Very_Light_Gray);
+        background-color: red;
+    }
+
+    .close{
+        display: none;
     }
 }
