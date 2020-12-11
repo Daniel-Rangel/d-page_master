@@ -1,14 +1,17 @@
-const close = document.querySelector('.mobile-nav')
+const clo = document.querySelector('.mobile-nav')
 const btn = document.querySelector('.menu_icon img')
+const menu = document.querySelectorAll('.mobile-nav li')
+const scroll = document.querySelector('body')
 
 btn.addEventListener('click', function(){
-    
-    if(close.classList == 'close'){
-        close.classList.remove('close')
-    }else{
-        close.classList.add('close')
-    }
-
+        clo.classList.add('close')
+        scroll.style.overflow = 'hidden'
 })
 
+for( m of menu){
+    m.addEventListener('click', function(){
+        clo.classList.remove('close')
+        scroll.style.overflow = 'auto'
+    })
+}
 
