@@ -26,6 +26,8 @@ for( m of menu){
     m.addEventListener('click', function(){
         clo.classList.remove('close')
         scroll.style.overflow = 'auto'
+        btn_imgs[1].style.display = 'none'
+        btn_imgs[0].style.display = 'block'
     })
 }
 
