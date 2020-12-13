@@ -357,7 +357,7 @@ li:last-child:hover a{
     /* menu */
     
     .menu{
-        width: 100%;
+        max-width: 375px;
         margin: 24px;
     }
 
@@ -375,6 +375,7 @@ li:last-child:hover a{
     }
 
     .insurance{
+        max-width: 375px;
         padding-top: 0;
         padding-bottom: 92px;
         text-align: center;
