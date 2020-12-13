@@ -3,30 +3,24 @@ const btn_imgs = document.querySelectorAll('.menu_icon img')
 const menu = document.querySelectorAll('.mobile-nav li')
 const scroll = document.querySelector('body')
 
-/* btn.addEventListener('click', function(){
-        clo.classList.add('close')
-        scroll.style.overflow = 'hidden'
-}) */
 
-btn_imgs[0].addEventListener('click' , function(){
-    console.log(btn_imgs[0])
-    if(btn_imgs[0].id == "menu_close"){
-        clo.classList.add('close')
-        btn_imgs[0].style.display = 'block'
-        scroll.style.overflow = 'hidden'
-        btn_imgs[0].style.display = 'none'
-    }
-})
-
-btn_imgs[1].addEventListener('click' , function(){
-    console.log(btn_imgs)
-     if(btn_imgs[1].id == "menu_open"){
-        clo.classList.remove('close')
-        btn_imgs[1].style.display = 'block'
-        scroll.style.overflow = 'auto'
-        btn_imgs[1].style.display = 'none'
-    }
-})
+for( let btn of btn_imgs){
+    btn.addEventListener('click', function(){
+        console.log(btn.id)
+        if(btn.id == "menu_open"){
+            clo.classList.add('close')
+            btn.style.display = 'none'
+            scroll.style.overflow = 'hidden'
+            btn_imgs[1].style.display = 'block'
+        }else if(btn.id == "menu_close"){
+            console.log(btn.id)
+            btn.style.display = 'none'
+            clo.classList.remove('close')
+            scroll.style.overflow = 'auto'
+            btn_imgs[0].style.display = 'block'
+        }
+    })
+}
 
 for( m of menu){
     m.addEventListener('click', function(){
