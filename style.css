@@ -351,8 +351,6 @@ li:last-child:hover a{
 
 
 
-/*1024//  //324*/
-
 @media only screen and (max-width: 375px){
     /* menu */
     
@@ -406,6 +404,7 @@ li:last-child:hover a{
     .insurance__text__h1,
     .different__h1,
     .work__h1{
+        width: 354px;
         font-size: 2.9em;
     }
 
@@ -415,29 +414,23 @@ li:last-child:hover a{
 
     .different{
         text-align: center;
-        max-width: 375px;
+        max-width: 360px;
         position: relative;
     }
 
-    .different::before{
+    .different::after {
         content: '';
         background: url("./images/bg-pattern-intro-right-mobile.svg");
         width: 125px;
         height: 330px;
         position: absolute;
         top: -270px;
-        left: 251px;
+        right: 0px;
     }
 
-    /* .different::before{
-        content: '';
-        background: url("./images/bg-pattern-intro-right-mobile.svg") no-repeat;
-        width: 125px;
-        height: 330px;
-        position: absolute;
-        top: -270px;
-        left: 251px;
-    } */
+    .different::before {
+        content: none;
+    }
 
     .different__h1::before{
         margin: 0 auto 48px;
@@ -517,7 +510,7 @@ li:last-child:hover a{
     .mobile-nav::before{
         content: '';
         background: url('./images/bg-pattern-mobile-nav.svg');
-        width: 375px;
+        width: 360px;
         height: 218px;
         position: absolute;
         bottom: 0;
