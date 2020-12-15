@@ -469,7 +469,7 @@ li:last-child:hover a{
 
     .ft--bg::before{
         background: url('./images/bg-pattern-footer-mobile.svg') no-repeat;
-        width: 374px;
+        width: 360px;
     }
 
     .footer__ftsocial{
@@ -510,7 +510,7 @@ li:last-child:hover a{
     .mobile-nav::before{
         content: '';
         background: url('./images/bg-pattern-mobile-nav.svg');
-        width: 360px;
+        width: 375px;
         height: 218px;
         position: absolute;
         bottom: 0;
