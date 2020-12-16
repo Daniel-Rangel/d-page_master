@@ -11,12 +11,13 @@
 *   Pratica com o BEM
 *   Flex Box
 *   Tags semântica
+*   Traino com responsividade (Desktop: 1440px e Mobile: 375px)
 <br>
 <br>
 
 # Status:
 
-<p align="center">🚧 Em construção...🚀 🚧</p>
+<p align="center">🚧 Termino Parcial. Sendo refaturado 🚀 🚧</p>
 <br>
 
 ### Resultado previsto:

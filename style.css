@@ -68,6 +68,10 @@ li:last-child:hover a{
     background-color: var(--color_Dark_Violet);
 }
 
+.mobile__order{
+    display:none;
+}
+
 /* insurance */
 .insurance--bg{
     overflow: hidden;
@@ -522,6 +526,7 @@ li:last-child:hover a{
 
     .mobile__order {
         margin-top: 24px;
+        display: block;
     }
 
     .mobile__order li{
