@@ -1,0 +1,75 @@
+/* refaturar css separando em componentes */
+@import url('https://fonts.googleapis.com/css2? family = Karla: wght @ 400; 700 & display = swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+:root{
+    --color_Very_Light_Gray: #fafafa;
+    --color_Gray: #8f8f91;
+    --color_Dark_Grayish_Violet: #837d87;
+    --color_Grayish_Blue: #95a9c6;
+    --color_Very_Dark_Violet: #2b272f;
+    --color_Dark_Violet: #2c2640;
+    --color_Dark_Violet_T: #2c2640a2;
+    --content: 1112px;
+    --space: 20px;
+    --size: 1em;
+    --size_title: 4em;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+.l-menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: var(--content);
+    
+}
+
+.menu__img{
+    flex: 2 0 72;
+    max-height: 72px;
+}
+
+.c-menu__list{
+    display: flex;
+}
+
+.c-menu__item{
+    list-style-type: none;
+}
+
+.c-menu__link{
+    padding: var(--space);
+    font-size: var(--size);
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+    .l-menu{
+        padding: 0 var(--space);
+    }
+
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px){
+    .l-menu{
+        padding: 0 var(--space);
+    }
+}
+
+@media only screen and (max-width: 479px) and (min-width: 320px){
+    .l-menu{
+        padding: 0 var(--space);
+    }
+}
