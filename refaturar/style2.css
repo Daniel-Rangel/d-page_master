@@ -29,7 +29,7 @@
 }
 
 .header,
-.main{
+.insurance__box{
     margin: 0 auto;
     max-width: var(--content);
     font-family: var(--fonte-text);
@@ -89,11 +89,15 @@
 }
 
 /* insurance */
-
 .insurance{
+    position: relative;
+}
+
+.insurance__box{
     display: flex;
     justify-content: space-between;
     position: relative;
+    z-index: 100;
 }
 
 .insurance__boximg{
@@ -116,14 +120,14 @@
 .insurance--bg::before{
     background-color: var(--color_Dark_Violet);
     content: '';
-    position: absolute;
     width: 100%;
-    height: 508px;
+    height: 502px;
+    position: absolute;
 }
 
 @media only screen and (max-width: 1116px) and (min-width: 720px){
     .header,
-    .main{
+    .insurance__box{
         padding: 0 var(--space);
     }
 
@@ -154,9 +158,11 @@
     }
 
     .header,
-    .main{
+    .insurance__box{
         padding: 0 var(--space);
     }
+
+    
 }
 
 @media only screen and (max-width: 479px) and (min-width: 320px){
