@@ -99,10 +99,11 @@
     position: relative;
     z-index: 100;
 }
-
+.insurance__text{
+    flex: 0 1 320px;
+}
 .insurance__boximg{
-    flex: 1 0 540px;
-    min-height: 604px;
+    flex: 0 1 540px;
 }
 
 .insurance__img{
