@@ -15,6 +15,7 @@
     --size: 1em;
     --size_title: 4em;
     --fonte-text: 'Karla', sans-serif;
+    --fonte-title: 'DM Serif Display', serif;
 }
 
 *{
@@ -95,8 +96,26 @@
 
 .insurance__box{
     display: flex;
+    padding-top: 100px;
     justify-content: space-between;
     position: relative;
+}
+
+.insurance__description::before{
+    content: '';
+    width: 152px;
+    height: 1px;
+    display: block;
+    margin-bottom: 10vh;
+    background-color: var(--color_Very_Light_Gray);
+}
+
+.insurance__title{
+    font-size: var(--size_title);
+    font-family: var(--fonte-title);
+    font-weight: 400;
+    color:var(--color_Very_Light_Gray);
+    line-height: 1;
 }
 
 .insurance__boximg{
@@ -118,7 +137,7 @@
     background-color: var(--color_Dark_Violet);
     content: '';
     width: 100%;
-    height: 35vw;
+    height: 42vw;
     position: absolute;
 }
 
