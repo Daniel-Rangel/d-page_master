@@ -118,6 +118,21 @@
     line-height: 1;
 }
 
+.insurance__text{
+    font-size: var(--size);
+    font-weight: 400;
+    color: var(--color_Very_Light_Gray);
+    margin-top: 25px;
+    line-height: 1.5em;
+    letter-spacing: .01em;
+}
+
+.insurance__link--skin{
+    border: 2px solid var(--color_Very_Light_Gray);
+    color: var(--color_Very_Light_Gray);
+    margin-top: var(--space) ;
+}
+
 .insurance__boximg{
     flex: 1 1 85vw;
 }
@@ -153,6 +168,14 @@
 
     .insurance--bg::before{
         height: 36vw;
+    }
+
+    .insurance__title{
+        font-size: calc(var(--size_title)/ 1.3);
+    }
+
+    .insurance__link--skin{
+        font-size: calc(var(--size)/1.3);
     }
 }
 
