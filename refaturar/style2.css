@@ -141,17 +141,27 @@
     width: 100%;
 }
 
-.insurance__box::before{
+.insurance--waves::before{
     background: url('../images/bg-pattern-intro-left-desktop.svg') no-repeat;
     content: '';
-    display: block;
     width: 195px;
     height: 504px;
     position: absolute;
     left: 0;
+    bottom: 0;
 }
 
-.insurance--bg::before{
+.insurance--waves::after{
+    background: url('../images/bg-pattern-intro-right-desktop.svg') no-repeat;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 436px;
+    height: 593px;
+}
+
+.insurance::before{
     background-color: var(--color_Dark_Violet);
     content: '';
     width: 100%;

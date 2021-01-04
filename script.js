@@ -30,4 +30,3 @@ for( m of menu){
         btn_imgs[0].style.display = 'block'
     })
 }
-
